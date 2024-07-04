@@ -1,0 +1,138 @@
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.headerNav {
+	width: 85%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 2rem;
+	position: relative;
+	margin-inline-start: 1rem;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	padding: 0;
+	margin: 0;
+}
+
+.navItem {
+	list-style: none;
+}
+
+.link,
+.active,
+.login {
+	text-decoration: none;
+	font-weight: var(--fw-bold);
+	transition: color 0.3s ease-in;
+}
+
+.linkLogo {
+	color: var(--color-dark);
+}
+
+.linkLogo:hover {
+	color: var(--color-graylish);
+}
+
+.link {
+	color: var(--color-graylish);
+}
+
+.link:hover,
+.active,
+.login:hover {
+	color: var(--color-dark);
+}
+
+.login {
+	background-color: transparent;
+	padding: 0.7rem 1.25rem;
+	margin-inline: 0.25rem;
+	border: none;
+	outline: none;
+	color: var(--color-graylish);
+	font-size: var(--fs-sm);
+	cursor: pointer;
+}
+
+.navBtn {
+	display: flex;
+	flex-direction: row;
+}
+
+.mobile {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	/* .navBtn {
+		display: none;
+	} */
+
+	.headerNav {
+		position: absolute;
+		top: -200vh;
+		left: 10%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 80vw;
+		height: 60vh;
+		background-color: var(--color-violet);
+		border-radius: var(--radii-md);
+		padding: 2rem;
+		transition: all 0.5s ease-in-out;
+	}
+
+	.nav {
+		width: 100%;
+	}
+
+	.activeNav {
+		top: 6rem;
+	}
+
+	.navBtn {
+		width: 100%;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.login {
+		color: var(--color-bg);
+		font-size: var(--fs-lg);
+	}
+
+	.nav {
+		flex-direction: column;
+		border-bottom: 1px solid rgba(245, 245, 245, 0.2);
+		padding-block-end: 2rem;
+	}
+
+	.link {
+		font-size: var(--fs-lg);
+		color: var(--color-bg);
+	}
+
+	.active {
+		font-size: var(--fs-lg);
+		color: var(--color-graylish);
+	}
+
+	.mobile {
+		display: block;
+		color: var(--color-graylish);
+	}
+}

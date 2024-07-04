@@ -1,0 +1,23 @@
+.bottom {
+	width: 100%;
+	height: 15rem;
+	background-color: var(--color-violet);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	padding: 3rem 1.5rem;
+	color: var(--color-bg);
+	text-align: center;
+}
+
+.title {
+	font-size: var(--fs-xl);
+	margin: 0;
+}
+
+@media (max-width: 767px) {
+	.title {
+		font-size: var(--fs-lg2);
+	}
+}

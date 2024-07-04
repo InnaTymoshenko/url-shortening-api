@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+	--family: 'Poppins', sans-serif;
+	--fs-sm: 14px;
+	--fs-md: 18px;
+	--fs-lg: 24px;
+	--fs-lg2: 30px;
+	--fs-xl: 36px;
+	--fs-2xl: 54px;
+	--fw-light: 500;
+	--fw-bold: 700;
+	--color-bg: #fff;
+	--color-cyan: hsl(180, 66%, 49%);
+	--color-violet: hsl(257, 27%, 26%);
+	--color-red: hsl(0, 87%, 67%);
+	--color-light: hsl(0, 0%, 75%, 0.3);
+	--color-gray: hsl(0, 0%, 75%);
+	--color-graylish: hsl(257, 7%, 63%);
+	--color-blue: hsl(255, 11%, 22%);
+	--color-dark: hsl(260, 8%, 14%);
+	--radii-sm: 8px;
+	--radii-md: 20px;
+	--radii: 100px;
+	/* --shadow: rgba(245, 245, 245, 0.2) 0 0 8px; */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: var(--family);
+	font-size: var(--fs-sm);
+	font-weight: var(--fw-light);
+	background-color: var(--color-bg);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+main {
+	min-height: 80vh;
+	flex: 1 1 auto;
+	overflow-x: hidden;
 }
