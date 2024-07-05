@@ -14,7 +14,7 @@
 }
 
 .items {
-	width: calc(100%-3rem);
+	width: 100%;
 	min-height: 5rem;
 	margin-block-end: 2rem;
 	display: flex;
