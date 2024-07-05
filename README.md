@@ -31,6 +31,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- CSS Grid
 - [React](https://reactjs.org/) - JS library
 - React-Hook-Form
 - React-redux/toolkit

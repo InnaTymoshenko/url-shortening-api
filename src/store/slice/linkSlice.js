@@ -1,9 +1,17 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { API_BASE_URL, API_KEY_URL } from '../../config'
+import { API_BASE_URL, CORS_URL } from '../../config'
 
 export const createShortLink = createAsyncThunk('links/createShortLink', async (url, thunkAPI) => {
 	try {
-		const response = await fetch(`${API_BASE_URL}?apikey=${API_KEY_URL}&url=${url}=shrlc`)
+		const response = await fetch(CORS_URL + API_BASE_URL, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			},
+			body: new URLSearchParams({
+				url: url
+			})
+		})
 		return await response.json()
 	} catch (error) {
 		return thunkAPI.rejectWithValue(error)
@@ -35,10 +43,9 @@ const linkSlice = createSlice({
 			state.loading = 'loading'
 		})
 		builder.addCase(createShortLink.fulfilled, (state, action) => {
-			const { status_code, data } = action.payload
-			console.log(data)
-			if (status_code === '200') {
-				state.shorten = data
+			const { result_url } = action.payload
+			if (result_url) {
+				state.shorten = result_url
 				state.loading = 'idle'
 			} else {
 				state.loading = 'error'

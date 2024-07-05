@@ -1,7 +1,7 @@
 .sectionForm {
 	width: 100%;
 	max-width: 1200px;
-	height: 8rem;
+	height: 10rem;
 	margin: 0 auto;
 	padding: 2rem 1.5rem;
 	position: relative;
@@ -10,7 +10,7 @@
 .container {
 	width: calc(100% - 3rem);
 	height: 100%;
-	padding: 2.5rem 3rem 1rem 2.5rem;
+	padding: 3rem 3.5rem 1.5rem 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -19,7 +19,7 @@
 	background-color: var(--color-violet);
 	border-radius: var(--radii-sm);
 	position: absolute;
-	top: 4rem;
+	top: 5rem;
 	z-index: 1;
 }
 
@@ -54,7 +54,7 @@
 	outline: none;
 	background-color: var(--color-cyan);
 	color: var(--color-bg);
-	font-size: var(--fs-sm);
+	font-size: var(--fs-md);
 	font-weight: var(--fw-bold);
 	cursor: pointer;
 	transition: opacity 0.3s ease-in;

@@ -10,7 +10,7 @@
 	margin: 0 auto;
 	padding-inline: 1.5rem;
 	padding-block-end: 2rem;
-	padding-block-start: 5rem;
+	padding-block-start: 7rem;
 }
 
 .items {
@@ -22,6 +22,18 @@
 	justify-content: center;
 	align-items: center;
 	gap: 1.5rem;
+
+	& span:first-child {
+		width: 100%;
+		margin-right: auto;
+		white-space: nowrap;
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+	}
+
+	& span:last-of-type {
+		color: var(--color-cyan);
+	}
 }
 
 .link {
@@ -44,18 +56,6 @@
 	color: var(--color-dark);
 	display: flex;
 	justify-content: space-between;
-}
-
-span:first-child {
-	width: 100%;
-	margin-right: auto;
-	white-space: nowrap;
-	overflow-x: hidden;
-	text-overflow: ellipsis;
-}
-
-span:last-of-type {
-	color: var(--color-cyan);
 }
 
 .shortenBtn {

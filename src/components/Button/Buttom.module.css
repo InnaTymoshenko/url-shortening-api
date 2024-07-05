@@ -6,7 +6,7 @@
 	outline: none;
 	border-radius: var(--radii);
 	color: var(--color-bg);
-	font-size: var(--fs-sm);
+	font-size: var(--fs-md);
 	font-weight: var(--fw-bold);
 	cursor: pointer;
 	transition: opacity 0.3s ease-in;

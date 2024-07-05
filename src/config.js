@@ -1,2 +1,2 @@
-export const API_BASE_URL = 'https://www.shareaholic.com/v2/share/shorten_link'
-export const API_KEY_URL = 'a444025e571aa6d1b027adbd2dbf4aeb'
+export const API_BASE_URL = 'https://cleanuri.com/api/v1/shorten'
+export const CORS_URL = 'https://corsproxy.io/?'
