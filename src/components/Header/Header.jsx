@@ -2,10 +2,8 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { IoReorderThree, IoClose } from 'react-icons/io5'
 import Button from '../Button/Button'
-// import logo from '../../images/logo.svg'
-
-import styles from './header.module.css'
 import Logo from '../Logo/Logo'
+import styles from './header.module.css'
 
 const Header = () => {
 	const [mobile, setMobile] = useState(false)
@@ -16,12 +14,10 @@ const Header = () => {
 				<div className={styles.logo}>
 					<NavLink to={'/'} className={styles.linkLogo}>
 						<Logo />
-						{/* <img src={logo} alt={logo} /> */}
 					</NavLink>
 				</div>
 				<nav className={mobile ? [styles.headerNav, styles.activeNav].join(' ') : [styles.headerNav]}>
 					<ul className={styles.nav}>
-						{/* <li className={styles.navItem}></li> */}
 						<li className={styles.navItem}>
 							<NavLink to={'/features'} className={({ isActive }) => (isActive ? styles.active : styles.link)}>
 								Features

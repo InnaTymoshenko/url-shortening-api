@@ -23,17 +23,6 @@ const Form = () => {
 		dispath(createShortLink(Url))
 		dispath(addLink(Url))
 		reset()
-		// try {
-		// 	fetch(`${API_BASE_URL}?apikey=${API_KEY_URL}&url=${Url}=shrlc`)
-		// 		.then(response => response.json())
-		// 		.then(data => setLink(data))
-		// 	// return response.json()
-		// } catch (error) {
-		// 	console.log(error)
-		// }
-		// // dispath(addLink(createShortenLink(createShortLink(Url), Url)))
-		// reset()
-		// dispath(addLink(createShortenLink(link, Url)))
 	}
 
 	return (

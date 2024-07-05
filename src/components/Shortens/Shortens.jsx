@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { motion, AnimatePresence } from 'framer-motion'
 import { selectItems, createShorten, selectUrl, selectShorten } from '../../store/slice/linkSlice'
+import { createShortenLink } from '../../utils/createShortenLinl'
 import Button from '../Button/Button'
 
 import styles from './Shortens.module.css'
-import { createShortenLink } from '../../utils/createShortenLinl'
 
 const Shortens = () => {
 	const [copiedLink, setCopiedLink] = useState(null)

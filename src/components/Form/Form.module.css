@@ -37,8 +37,6 @@
 	height: 100%;
 	border-radius: var(--radii-sm);
 	padding-inline: 1.5rem;
-	/* border: none; */
-	/* outline: none; */
 	font-size: var(--fs-md);
 	color: var(--color-graylish);
 }

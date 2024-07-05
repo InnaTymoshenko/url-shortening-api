@@ -77,10 +77,6 @@
 }
 
 @media (max-width: 767px) {
-	/* .navBtn {
-		display: none;
-	} */
-
 	.headerNav {
 		position: absolute;
 		top: -200vh;
