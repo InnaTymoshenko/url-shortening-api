@@ -42,7 +42,7 @@
 }
 
 .form input::placeholder {
-	font-size: var(--fs-sm);
+	font-size: var(--fs-md);
 	color: var(--color-graylish);
 }
 
