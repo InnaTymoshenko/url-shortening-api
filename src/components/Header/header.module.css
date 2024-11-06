@@ -81,12 +81,12 @@
 	.headerNav {
 		position: absolute;
 		top: -200vh;
-		left: 10%;
+		left: 6%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 80vw;
-		height: 60vh;
+		height: 55vh;
 		background-color: var(--color-violet);
 		border-radius: var(--radii-md);
 		padding: 2rem;
